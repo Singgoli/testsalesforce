@@ -100,9 +100,10 @@ let EmbedReport = function (token, reportId) {
     accessToken: token,
     tokenType: models.TokenType.Aad,
     settings: {
+      layoutType: models.LayoutType.MobilePortrait,
       panes: {
         filters: { expanded: false, visible: false },
-        pageNavigation: { visible: false }
+        pageNavigation: { visible: true }
       }
     }
   };
